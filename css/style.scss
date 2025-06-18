@@ -1,0 +1,78 @@
+ul {
+    list-style-type: none;
+    // list-style-image: url('');
+}
+
+
+.listitem li {
+    padding: 5px 0;
+}
+.Package {
+   text-align: center;
+   margin-top: 50px;
+   margin-bottom: 70px;
+}
+.bluecard {
+    background-color: #3F87F5 ;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+
+// for 20% 
+.row-wedding {
+    position: relative;
+}
+.right-lebel {
+    position: absolute;
+    right: 0;
+    border-left: 5px solid blue;
+    padding: 5px 0 5px 5px;
+}
+
+button {
+    border: 1px solid transparent;
+    border-radius: 20px;
+}
+.carddiv {
+    display: flex;
+    margin: 30px auto;
+   
+    justify-content: center;
+    align-content: center;
+    column-gap: 20px;
+    box-shadow: #FFFFFF;
+}
+.carddiv img {
+    justify-content: center;
+    align-items: center;
+
+}
+.gadget {
+    width: 70%;
+}
+
+.Business {
+    justify-content: space-between;
+}
+.Business>div {
+    width: 24%;
+}
+@media screen and (min-width:1020px) {
+    .Business {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+}
+
+@media (min-width: 300px) and (max-width: 1020px) {
+    .Business {
+        flex-direction: column;
+    }
+    .Business>div {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+}
